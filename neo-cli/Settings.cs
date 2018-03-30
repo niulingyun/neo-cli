@@ -35,7 +35,7 @@ namespace Neo
         public PathsSettings(IConfigurationSection section)
         {
             this.Chain = section.GetSection("Chain").Value;
-            this.ApplicationLogs = Path.Combine(AppContext.BaseDirectory, $"ApplicationLogs_{Message.Magic:X8}");
+            this.ApplicationLogs = "ApplicationLogs";
         }
     }
 
